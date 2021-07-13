@@ -1,3 +1,6 @@
+import "./components/css/landing.css";
+import EthereumCoin from "./components/img/eth.svg";
+import Logo from "./components/img/logo.svg";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import WalletLink from "walletlink";
 import { Alert, Button, Col, Menu, Row } from "antd";
@@ -344,10 +347,10 @@ function App(props) {
   return (
     <div className="App">
       {/* ✏️ Edit the header and change the title to your project name */}
-      <Header />
-      {networkDisplay}
-      <BrowserRouter>
-        <Menu style={{ textAlign: "center" }} selectedKeys={[route]} mode="horizontal">
+       {/* <Header />
+      {networkDisplay} 
+      <BrowserRouter> */}
+        {/* <Menu style={{ textAlign: "center" }} selectedKeys={[route]} mode="horizontal">
           <Menu.Item key="/">
             <Link
               onClick={() => {
@@ -398,24 +401,24 @@ function App(props) {
               Subgraph
             </Link>
           </Menu.Item>
-        </Menu>
+        </Menu> */}
 
-        <Switch>
-          <Route exact path="/">
+        {/* <Switch>
+          <Route exact path="/"> */}
             {/*
                 🎛 this scaffolding is full of commonly used components
                 this <Contract/> component will automatically parse your ABI
                 and give you a form to interact with it locally
             */}
-
+{/* 
             <Contract
               name="YourContract"
               signer={userSigner}
               provider={localProvider}
               address={address}
               blockExplorer={blockExplorer}
-            />
-          </Route>
+            /> */}
+          {/* </Route>
           <Route path="/hints">
             <Hints
               address={address}
@@ -447,7 +450,7 @@ function App(props) {
               provider={mainnetProvider}
               address={address}
               blockExplorer="https://etherscan.io/"
-            />
+            /> */}
             {/*
             <Contract
               name="UNI"
@@ -458,7 +461,7 @@ function App(props) {
               blockExplorer="https://etherscan.io/"
             />
             */}
-          </Route>
+          {/* </Route>
           <Route path="/subgraph">
             <Subgraph
               subgraphUri={props.subgraphUri}
@@ -470,26 +473,61 @@ function App(props) {
         </Switch>
       </BrowserRouter>
 
-      <ThemeSwitch />
+      <ThemeSwitch /> */}
+
+<div>
+        <nav>
+            <div className="leftNav">
+                <a href="/">
+                    <img src={Logo} alt="Spindle"></img>
+                </a>
+            </div>
+            <div className="rightNav">
+                <ul className="menu">
+                    <li><Button size="large">Explore</Button></li>
+                    <li><Button size="large">About</Button></li>
+                    <li>
+                    <Account
+                        address={address}
+                        localProvider={localProvider}
+                        userSigner={userSigner}
+                        mainnetProvider={mainnetProvider}
+                        price={price}
+                        web3Modal={web3Modal}
+                        loadWeb3Modal={loadWeb3Modal}
+                        logoutOfWeb3Modal={logoutOfWeb3Modal}
+                        blockExplorer={blockExplorer}
+                      />
+                    </li>
+                    <li component={Link} to="#"><a href="#" className="startBtn">Get Started</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section className="mid">
+            <div className="leftSec">
+                <p className="smallTxt">The future of write-ups</p>
+                <div className="bigTxt">The <div className="colorTxt">next gen</div><br/>
+                    publishing platform,<br/> secured by NFTs
+                </div>
+                <p className="medTxt">Explore alternate storylines and treasure visual memoirs with
+                    <span className="spindleTxt">spindle</span>
+                </p>
+            </div>
+            <div className="rightSec">
+                <img src={EthereumCoin} alt="Etherium Coin" />
+            </div>
+        </section>
+    <div className="bottomWave"></div>
+    </div>
 
       {/* 👨‍💼 Your account is in the top right with a wallet at connect options */}
       <div style={{ position: "fixed", textAlign: "right", right: 0, top: 0, padding: 10 }}>
-        <Account
-          address={address}
-          localProvider={localProvider}
-          userSigner={userSigner}
-          mainnetProvider={mainnetProvider}
-          price={price}
-          web3Modal={web3Modal}
-          loadWeb3Modal={loadWeb3Modal}
-          logoutOfWeb3Modal={logoutOfWeb3Modal}
-          blockExplorer={blockExplorer}
-        />
-        {faucetHint}
+        {/* {faucetHint} */}
       </div>
 
       {/* 🗺 Extra UI like gas price, eth price, faucet, and support: */}
-      <div style={{ position: "fixed", textAlign: "left", left: 0, bottom: 20, padding: 10 }}>
+      {/* <div style={{ position: "fixed", textAlign: "left", left: 0, bottom: 20, padding: 10 }}>
         <Row align="middle" gutter={[4, 4]}>
           <Col span={8}>
             <Ramp price={price} address={address} networks={NETWORKS} />
@@ -517,7 +555,6 @@ function App(props) {
         <Row align="middle" gutter={[4, 4]}>
           <Col span={24}>
             {
-              /*  if the local provider has a signer, let's show the faucet:  */
               faucetAvailable ? (
                 <Faucet localProvider={localProvider} price={price} ensProvider={mainnetProvider} />
               ) : (
@@ -526,7 +563,7 @@ function App(props) {
             }
           </Col>
         </Row>
-      </div>
+      </div> */}
     </div>
   );
 }
