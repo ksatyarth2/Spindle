@@ -1,6 +1,7 @@
 import { Button } from "antd";
 import React from "react";
 import { useThemeSwitcher } from "react-css-theme-switcher";
+import "./css/landing.css";
 import Address from "./Address";
 import Balance from "./Balance";
 import Wallet from "./Wallet";
@@ -56,26 +57,26 @@ export default function Account({
     if (web3Modal.cachedProvider) {
       modalButtons.push(
         <Button
+          className="menuBtn"
           key="logoutbutton"
-          style={{ verticalAlign: "top", marginLeft: 8, marginTop: 4 }}
-          shape="round"
           size="large"
+          style={{ verticalAlign: "top", marginLeft: 8, marginTop: 4 }}
           onClick={logoutOfWeb3Modal}
         >
-          logout
+          Log Out
         </Button>,
       );
     } else {
       modalButtons.push(
         <Button
+          className="menuBtn"
           key="loginbutton"
           style={{ verticalAlign: "top", marginLeft: 8, marginTop: 4 }}
-          shape="round"
           size="large"
           /* type={minimized ? "default" : "primary"}     too many people just defaulting to MM and having a bad time */
           onClick={loadWeb3Modal}
         >
-          connect
+          Log In
         </Button>,
       );
     }
@@ -87,12 +88,12 @@ export default function Account({
     ""
   ) : (
     <span>
-      {address ? (
+       {address ? (
         <Address address={address} ensProvider={mainnetProvider} blockExplorer={blockExplorer} />
       ) : (
         "Connecting..."
-      )}
-      <Balance address={address} provider={localProvider} price={price} />
+      )} 
+       <Balance address={address} provider={localProvider} price={price} /> 
       <Wallet
         address={address}
         provider={userProvider}
@@ -105,7 +106,7 @@ export default function Account({
 
   return (
     <div>
-      {display}
+      {/* {display} */}
       {modalButtons}
     </div>
   );
