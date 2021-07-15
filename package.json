@@ -62,5 +62,7 @@
       "**/hardhat/**"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "@portis/web3": "^4.0.5"
+  }
 }
