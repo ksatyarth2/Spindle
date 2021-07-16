@@ -196,10 +196,10 @@ function App(props) {
   ]);
 
   // keep track of a variable from the contract in the local React state:
-  const purpose = useContractReader(readContracts, "YourContract", "purpose");
+  const purpose = useContractReader(readContracts, "SpindleContract", "purpose");
 
   // 📟 Listen for broadcast events
-  const setPurposeEvents = useEventListener(readContracts, "YourContract", "SetPurpose", localProvider, 1);
+  const setPurposeEvents = useEventListener(readContracts, "SpindleContract", "SetPurpose", localProvider, 1);
 
   /*
   const addressFromENS = useResolveName(mainnetProvider, "austingriffith.eth");
@@ -366,7 +366,7 @@ function App(props) {
               }}
               to="/"
             >
-              YourContract
+              SpindleContract
             </Link>
           </Menu.Item>
           <Menu.Item key="/hints">
@@ -420,7 +420,7 @@ function App(props) {
             */}
 {/* 
             <Contract
-              name="YourContract"
+              name="SpindleContract"
               signer={userSigner}
               provider={localProvider}
               address={address}

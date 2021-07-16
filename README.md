@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # 🏗 Scaffold-ETH
 
 > everything you need to build on Ethereum! 🚀
@@ -25,7 +27,7 @@ Prerequisites: [Node](https://nodejs.org/dist/latest-v12.x/) plus [Yarn](https:/
 git clone https://github.com/austintgriffith/scaffold-eth.git
 ```
 
-> install and start your 👷‍ Hardhat chain: 
+> install and start your 👷‍ Hardhat chain:
 
 ```bash
 cd scaffold-eth
@@ -47,16 +49,15 @@ cd scaffold-eth
 yarn deploy
 ```
 
-You should now have a local blockchain, with `YourContract.sol` deployed, and your app running on https://localhost:3000.
+You should now have a local blockchain, with `SpindleContract.sol` deployed, and your app running on https://localhost:3000.
 
 # 📚 Documentation
 
-For a more in-depth explanation, documentation, tutorials, challenges, and many more resources, visit: [docs.scaffoldeth.io](https://docs.scaffoldeth.io) 
+For a more in-depth explanation, documentation, tutorials, challenges, and many more resources, visit: [docs.scaffoldeth.io](https://docs.scaffoldeth.io)
 
 # 🛠 Buidl
 
 Check out all the [active branches](https://github.com/austintgriffith/scaffold-eth/branches/active), [open issues](https://github.com/austintgriffith/scaffold-eth/issues), and join/fund the 🏰 [BuidlGuidl](https://BuidlGuidl.com)!
-
 
 # 💬 Support Chat
 

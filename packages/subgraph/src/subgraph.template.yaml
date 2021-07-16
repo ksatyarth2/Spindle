@@ -1,13 +1,15 @@
+# @format
+
 specVersion: 0.0.2
 schema:
   file: ./src/schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: YourContract
+    name: SpindleContract
     network: localhost
     source:
       address: "{{localhost_YourContractAddress}}"
-      abi: YourContract
+      abi: SpindleContract
       startBlock: 1
     mapping:
       kind: ethereum/events
@@ -17,7 +19,7 @@ dataSources:
         - Purpose
         - Sender
       abis:
-        - name: YourContract
+        - name: SpindleContract
           file: ./abis/localhost_YourContract.json
       eventHandlers:
         - event: SetPurpose(address,string)
