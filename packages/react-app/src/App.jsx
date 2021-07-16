@@ -24,6 +24,8 @@ import {
 } from "./hooks";
 // import Hints from "./Hints";
 import { ExampleUI, Hints, Subgraph } from "./views";
+import Portis from "@portis/web3";
+
 
 const { ethers } = require("ethers");
 /*
@@ -101,6 +103,12 @@ const web3Modal = new Web3Modal({
           100:"https://dai.poa.network", // xDai
         },
       },
+    },
+    portis: {
+      package: Portis, // required
+      options: {
+        id: "ce67c45a-a5ac-441f-ac37-1d251c0dd982" // required
+      }
     },
     'custom-walletlink': {
       display: {
