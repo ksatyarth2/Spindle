@@ -10,12 +10,12 @@
 }
 
 body {
-  background: url("../img/bg.svg") no-repeat center center fixed;
+  background: url(../img/bg.svg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 nav {
@@ -23,7 +23,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url("../img/top-wave.svg") no-repeat;
+  background: url(../img/top-wave.svg) no-repeat;
   background-size: cover;
 }
 
@@ -55,7 +55,7 @@ nav {
 }
 
 .menu li a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .startBtn {
@@ -123,7 +123,7 @@ nav {
 
 .bottomWave {
   margin-top: -90px;
-  height: 245px;
-  background: url("../img/bottom-wave.svg") no-repeat;
+  height: 230px;
+  background: url(../img/bottom-wave.svg) no-repeat;
   background-size: cover;
 }

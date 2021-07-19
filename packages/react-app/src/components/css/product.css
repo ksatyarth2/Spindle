@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background: url(../img/productBg.svg);
+  background-size: cover;
+  background-position: center;
+  background-color: #121222;
+  display: flex;
+  margin: 60px;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px 100px;
+}
+
+.productImg{
+  margin-right: 20px;
+}
+
+.productDesc {
+  width: 500px;
+  height: 530px;
+}
+
+.title {
+  font-family: "Paytone One";
+  font-size: 50px;
+}
+
+.name,
+.price {
+  font-size: 28px;
+}
+
+.desc {
+  font-size: 19px;
+  margin-top: 50px;
+}
+
+.price {
+  color: #e5ff46;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+.buyBtn {
+  transition: 0.5s ease;
+  font-size: 26px;
+  padding: 6px 80px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #6737ce 0%, #1b0053 100%);
+  box-shadow: 2px 2px 4px #00000040;
+}
+
+.buyBtn:hover{
+  transition: 0.5s ease;
+  border-radius: 30px;
+}
+
+.likeBtn {
+  transition: 0.5s ease;
+  background-image: url("../img/unlike.svg");
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 40px;
+  margin: 90px 80px;
+}
+
+.likeBtn:hover{
+  transition: 0.5s ease;
+  background-image: url("../img/like.svg");
+}
