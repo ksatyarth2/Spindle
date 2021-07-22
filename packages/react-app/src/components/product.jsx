@@ -1,7 +1,7 @@
 import React from "react";
-import "./css/product.css";
+import "../components/css/product.css";
 
-const Product = () => {
+export default function Product() {
     return (
         <div className="product">   
             <a href="#" className="backBtn"><img src="./img/back.svg" alt="back" /></a>
@@ -27,4 +27,3 @@ const Product = () => {
     );
 };
 
-export default Product;

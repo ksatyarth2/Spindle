@@ -9,7 +9,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import Web3Modal from "web3modal";
 import "./App.css";
-import { Account, Contract, Faucet, GasGauge, Header, Ramp, ThemeSwitch } from "./components";
+import { Account, Contract, Faucet, GasGauge, Header, Ramp, ThemeSwitch, Product } from "./components";
 import { INFURA_ID, NETWORK, NETWORKS } from "./constants";
 import { Transactor } from "./helpers";
 import {
@@ -564,6 +564,11 @@ function App(props) {
           </Col>
         </Row>
       </div> */}
+      <Switch>
+        <Route path="/product">
+          <Product/>
+        </Route>
+      </Switch>
     </div>
   );
 }
