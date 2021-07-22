@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/product.css";
 
-const Product = () => {
+function Product() {
     return (
         <div className="product">   
             <a href="#" className="backBtn"><img src="./img/back.svg" alt="back" /></a>
