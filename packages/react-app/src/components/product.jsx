@@ -1,13 +1,15 @@
 import React from "react";
-import "../components/css/product.css";
+//import "./css/product.css";
+import SampleImg from "./img/sampleImg.svg";
+import Back from "./img/back.svg";
 
 
 export default function Product() {
     return (
-        <div className="product">   
-            <a href="#" className="backBtn"><img src="./img/back.svg" alt="back" /></a>
+        <div className="product body1 main">   
+            <a href="#" className="backBtn"><img src={Back} alt="back" /></a>
             <main>
-                <div className="productImg"><img src="./img/sampleImg.svg" width="420px" height="500px" /></div>
+                <div className="productImg"><img src={SampleImg} width="420px" height="500px" /></div>
                 <div className="productDesc">
                     <div className="top">
                         <div className="title">Title of something</div>
