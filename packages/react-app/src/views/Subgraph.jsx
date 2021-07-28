@@ -165,7 +165,7 @@ function Subgraph(props) {
             onClick={() => {
               console.log("newPurpose", newPurpose);
               /* look how you call setPurpose on your contract: */
-              props.tx(props.writeContracts.YourContract.setPurpose(newPurpose));
+              props.tx(props.writeContracts.SpindleContract.setPurpose(newPurpose));
             }}
           >
             Set Purpose

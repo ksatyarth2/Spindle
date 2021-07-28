@@ -11,12 +11,12 @@ const DEBUG = false;
 
   ~ How can I use? ~
 
-  const purpose = useContractReader(readContracts,"YourContract", "purpose")
+  const purpose = useContractReader(readContracts,"SpindleContract", "purpose")
 
   ~ Features ~
 
   - Provide readContracts by loading contracts (see more on ContractLoader.js)
-  - Specify the name of the contract, in this case it is "YourContract"
+  - Specify the name of the contract, in this case it is "SpindleContract"
   - Specify the name of the variable in the contract, in this case we keep track of "purpose" variable
   - Pass an args array if the function requires
   - Pass pollTime - if no pollTime is specified, the function will update on every new block
