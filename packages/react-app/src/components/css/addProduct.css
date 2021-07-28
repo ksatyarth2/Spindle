@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-color: #121222;
+  display: flex;
+  margin: 40px;
+  overflow: hidden;
+}
+
+.prodHeading {
+  font-size: 2em;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.prodHeading strong {
+  color: #e5ff46;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px 100px;
+}
+
+.fields {
+  margin-top: 160px;
+  list-style: none;
+}
+
+.visible {
+  visibility: visible;
+  position: absolute;
+  top: 40%;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  margin-left: -100px;
+  visibility: hidden;
+  transition: all ease-out 0.5s;
+}
+
+li label {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+li input {
+  width: 40vw;
+  height: 8vh;
+  padding: 5px 10px;
+  font-size: 2em;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  text-overflow: ellipsis;
+}
+
+li input:focus {
+  border: #fff 2px solid;
+}
+
+.prodSubmit {
+  position: absolute;
+  bottom: 10%;
+  left: 75%;
+  transition: 0.5s ease;
+  font-size: 26px;
+  padding: 6px 70px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #6737ce 0%, #1b0053 100%);
+  box-shadow: 2px 2px 4px #00000040;
+}
+
+.prodSubmit:hover {
+  transition: 0.2s ease;
+  border-radius: 30px;
+}
+
+textarea {
+  background-color: #ffffff60;
+  padding: 10px;
+  color: black;
+}
