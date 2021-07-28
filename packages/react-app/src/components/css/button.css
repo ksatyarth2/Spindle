@@ -1,0 +1,10 @@
+.menuBtn{
+    padding: 8px 18px;
+    border: 1px solid white;
+    border-radius: 5px;
+  
+  }
+  
+  .menuBtn:hover{
+    background: #8859ec;
+  }

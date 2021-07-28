@@ -58,6 +58,18 @@ nav {
   text-decoration: underline;
 }
 
+.menuBtn{
+  padding: 8px 18px;
+  border: 1px solid white;
+  margin: 0 0 0 0;
+  border-radius: 5px;
+
+}
+
+.menuBtn:hover{
+  background: #8859ec;
+}
+
 .startBtn {
   padding: 8px 12px;
   color: white;

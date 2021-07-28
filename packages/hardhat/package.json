@@ -14,7 +14,7 @@
     "@eth-optimism/hardhat-ovm": "^0.2.2",
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
     "@nomiclabs/hardhat-waffle": "^2.0.0",
-    "@openzeppelin/contracts": "^3.4.0-solc-0.7",
+    "@openzeppelin/contracts": "^4.2.0",
     "@superfluid-finance/ethereum-contracts": "^1.0.0-rc.5",
     "@tenderly/hardhat-tenderly": "^1.0.10",
     "chai": "^4.2.0",
