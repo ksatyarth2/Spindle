@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-main,
+.main,
 nav,
-section,
-summary {
+.section,
+.summary {
   display: block;
 }
 
@@ -15,7 +15,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-body {
+.body {
   margin: 0;
 }
 a:focus {

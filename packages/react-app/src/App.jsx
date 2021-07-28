@@ -1,13 +1,21 @@
 import React from "react";
 import MainRouter from "./MainRouter";
+import { ThemeSwitcherProvider } from "react-css-theme-switcher";
 
-function App(props) {
+const themes = {
+  dark: `${process.env.PUBLIC_URL}/dark-theme.css`,
+  light: `${process.env.PUBLIC_URL}/light-theme.css`,
+};
+
+const prevTheme = window.localStorage.getItem("theme");
+
+const App = () => {
 
   return (
-    <div className="App">
-      <MainRouter />
-    </div>
+      <ThemeSwitcherProvider themeMap={themes} defaultTheme={prevTheme || "light"}>
+        <MainRouter />
+      </ThemeSwitcherProvider>
   );
 }
 
-export default App;
+export default (App);

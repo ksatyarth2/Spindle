@@ -2,27 +2,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-* {
-  /* margin: 0;
+/* * {
+   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  color: white; */
-  /* overflow: hidden; */
-}
+  color: white; 
+   overflow: hidden; 
+} */
 
 
 .main {
   display: flex;
   align-items: center;
+  font-family: "Poppins", sans-serif;
   justify-content: center;
   /* margin: 50px 50px;    why do you need margin here? */
 }
 
 
-.body1 {
+.body {
   background: url("../img/productBg.svg");
   background-size: cover;
   background-position: center;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
   background-color: #121222;
   display: flex;
   /* margin: 60px;  why do you need margin here? */
@@ -63,6 +65,7 @@
   transition: 0.5s ease;
   font-size: 26px;
   padding: 6px 80px;
+  margin-top: 20px;
   border-radius: 10px;
   background: linear-gradient(180deg, #6737ce 0%, #1b0053 100%);
   box-shadow: 2px 2px 4px #00000040;

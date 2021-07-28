@@ -19,4 +19,5 @@ export { default as Wallet } from "./Wallet";
 export { default as L2Bridge } from "./L2Bridge";
 export { default as Product } from "./Product";
 export { default as Landing } from "./Landing";
+export { default as Gallery } from "./Gallery";
 

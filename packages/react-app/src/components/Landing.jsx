@@ -6,7 +6,7 @@ import WalletLink from "walletlink";
 import { Alert, Button, Col, Menu, Row } from "antd";
 import "antd/dist/antd.css";
 import React, { useCallback, useEffect, useState } from "react";
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import Web3Modal from "web3modal";
 import { Account, Contract, Faucet, GasGauge, Header, Ramp, ThemeSwitch } from "../components";
 import { INFURA_ID, NETWORK, NETWORKS } from "../constants";
@@ -344,12 +344,12 @@ export default function Landing(props) {
   }
 
   return (
-    <div className="App">
+    <div>
       {/* ✏️ Edit the header and change the title to your project name */}
-      {/* <Header />
+       {/* <Header />
       {networkDisplay} 
       <BrowserRouter> */}
-      {/* <Menu style={{ textAlign: "center" }} selectedKeys={[route]} mode="horizontal">
+        {/* <Menu style={{ textAlign: "center" }} selectedKeys={[route]} mode="horizontal">
           <Menu.Item key="/">
             <Link
               onClick={() => {
@@ -402,14 +402,14 @@ export default function Landing(props) {
           </Menu.Item>
         </Menu> */}
 
-      {/* <Switch>
+        {/* <Switch>
           <Route exact path="/"> */}
-      {/*
+            {/*
                 🎛 this scaffolding is full of commonly used components
                 this <Contract/> component will automatically parse your ABI
                 and give you a form to interact with it locally
             */}
-      {/* 
+{/* 
             <Contract
               name="YourContract"
               signer={userSigner}
@@ -417,7 +417,7 @@ export default function Landing(props) {
               address={address}
               blockExplorer={blockExplorer}
             /> */}
-      {/* </Route>
+          {/* </Route>
           <Route path="/hints">
             <Hints
               address={address}
@@ -450,7 +450,7 @@ export default function Landing(props) {
               address={address}
               blockExplorer="https://etherscan.io/"
             /> */}
-      {/*
+            {/*
             <Contract
               name="UNI"
               customContract={mainnetContracts && mainnetContracts.contracts && mainnetContracts.contracts.UNI}
@@ -460,7 +460,7 @@ export default function Landing(props) {
               blockExplorer="https://etherscan.io/"
             />
             */}
-      {/* </Route>
+          {/* </Route>
           <Route path="/subgraph">
             <Subgraph
               subgraphUri={props.subgraphUri}
@@ -475,72 +475,56 @@ export default function Landing(props) {
 
       <ThemeSwitch /> */}
 
-      <div>
-        <BrowserRouter>
-          <nav>
+<div>
+        <nav>
             <div className="leftNav">
-              <a href="/">
-                <img src={Logo} alt="Spindle"></img>
-              </a>
+                <a href="/">
+                    <img src={Logo} alt="Spindle"></img>
+                </a>
             </div>
             <div className="rightNav">
-              <ul className="menu">
-                <li>
-                  <Link to="/">
-                    <Button size="large">Explore</Button>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/products">
-                    <Button size="large">Gallery</Button>
-                  </Link>
-                </li>
-                <li>
-                  <Account
-                    address={address}
-                    localProvider={localProvider}
-                    userSigner={userSigner}
-                    mainnetProvider={mainnetProvider}
-                    price={price}
-                    web3Modal={web3Modal}
-                    loadWeb3Modal={loadWeb3Modal}
-                    logoutOfWeb3Modal={logoutOfWeb3Modal}
-                    blockExplorer={blockExplorer}
-                  />
-                </li>
-                <li component={Link} to="#">
-                  <a href="#" className="startBtn">
-                    Get Started
-                  </a>
-                </li>
-              </ul>
+                <ul className="menu">
+                    <li><Link to="/"><Button size="large">Create</Button></Link></li>
+                    <li><Link to="/explore"><Button size="large">Explore</Button></Link></li>
+                    <li>
+                    <Account
+                        address={address}
+                        localProvider={localProvider}
+                        userSigner={userSigner}
+                        mainnetProvider={mainnetProvider}
+                        price={price}
+                        web3Modal={web3Modal}
+                        loadWeb3Modal={loadWeb3Modal}
+                        logoutOfWeb3Modal={logoutOfWeb3Modal}
+                        blockExplorer={blockExplorer}
+                      />
+                    </li>
+                    <li component={Link} to="#"><a href="#" className="startBtn">Get Started</a></li>
+                </ul>
             </div>
-          </nav>
-        </BrowserRouter>
+        </nav>
 
         <section className="mid">
-          <div className="leftSec">
-            <p className="smallTxt">The future of write-ups</p>
-            <div className="bigTxt">
-              The <div className="colorTxt">next gen</div>
-              <br />
-              publishing platform,
-              <br /> secured by NFTs
+            <div className="leftSec">
+                <p className="smallTxt">The future of write-ups</p>
+                <div className="bigTxt">The <div className="colorTxt">next gen</div><br/>
+                    publishing platform,<br/> secured by NFTs
+                </div>
+                <p className="medTxt">Explore alternate storylines and treasure visual memoirs with
+                    <span className="spindleTxt">spindle</span>
+                </p>
             </div>
-            <p className="medTxt">
-              Explore alternate storylines and treasure visual memoirs with
-              <span className="spindleTxt">spindle</span>
-            </p>
-          </div>
-          <div className="rightSec">
-            <img src={EthereumCoin} alt="Etherium Coin" />
-          </div>
+            <div className="rightSec">
+                <img src={EthereumCoin} alt="Etherium Coin" />
+            </div>
         </section>
-        <div className="bottomWave"></div>
-      </div>
+    <div className="bottomWave"></div>
+    </div>
 
       {/* 👨‍💼 Your account is in the top right with a wallet at connect options */}
-      {/* <div style={{ position: "fixed", textAlign: "right", right: 0, top: 0, padding: 10 }}>{faucetHint}</div> */}
+      <div style={{ position: "fixed", textAlign: "right", right: 0, top: 0, padding: 10 }}>
+        {/* {faucetHint} */}
+      </div>
 
       {/* 🗺 Extra UI like gas price, eth price, faucet, and support: */}
       {/* <div style={{ position: "fixed", textAlign: "left", left: 0, bottom: 20, padding: 10 }}>

@@ -2,14 +2,15 @@ import React from "react";
 import "./css/product.css";
 import SampleImg from "./img/sampleImg.svg";
 import Back from "./img/back.svg";
+import {Link} from "react-router-dom";
 
 export default function Product() {
   return (
-    <div className="product body1 main">
-      <a href="#" className="backBtn">
+    <div className="product body">
+      <Link to="/" className="backBtn">
         <img src={Back} alt="back" />
-      </a>
-      <main>
+      </Link>
+      <div className="main">
         <div className="productImg">
           <img src={SampleImg} width="420px" height="500px" />
         </div>
@@ -26,7 +27,7 @@ export default function Product() {
           <div className="price">1.00 eth</div>
           <button className="buyBtn">Buy</button>
         </div>
-      </main>
+      </div>
       <button className="likeBtn"></button>
     </div>
   );

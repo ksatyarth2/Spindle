@@ -1,9 +1,11 @@
 import React from "react";
-import "./css/gallery.css";
+//import "./css/gallery.css";
+import Logo from "./img/logo.svg";
+import {Link} from "react-router-dom";
 
 export default function Gallery() {
     return (
-      <div className="product body1 main">
+      <div className="product body">
          <svg class="hidden">
         <symbol id="icon-arrow" viewBox="0 0 24 24">
             <title>arrow</title>
@@ -27,13 +29,13 @@ export default function Gallery() {
                 points="204 0 168.3 35.7 311.1 178.5 0 178.5 0 229.5 311.1 229.5 168.3 372.3 204 408 408 204"></polygon>
         </symbol>
     </svg>
-    <main id="setup">
+    <div id="setup" classNAme="main">
         <div class="frame">
             <header class="spindle-header">
-                <h1 class="spindle-header__title"><a href="./index.html"><img src="./img/logo.svg" /></a></h1>
+                <h1 class="spindle-header__title"><a href="./index.html"><img src={Logo} /></a></h1>
                 <div class="spindle-links">
-                    <a class="github" href="./index.html">Home</a>
-                    <a class="github" href="./addProduct.html">Add Product</a>
+                    <Link class="github" to="/">Home</Link>
+                    <Link class="github" to="create">Create</Link>
                 </div>
             </header>
         </div>
@@ -44,18 +46,18 @@ export default function Gallery() {
             </a>
             <button class="nav nav--prev">
                 <svg class="icon icon--navarrow-prev">
-                    <use xlink:href="#icon-navarrow"></use>
+                    <use xlinkHref="#icon-navarrow"></use>
                 </svg>
             </button>
             <button class="nav nav--next">
                 <svg class="icon icon--navarrow-next">
-                    <use xlink:href="#icon-navarrow"></use>
+                    <use xlinkHref="#icon-navarrow"></use>
                 </svg>
             </button>
         </div>
         <div class="content">
         </div>
-    </main>
+    </div>
       </div>
     );
   }
