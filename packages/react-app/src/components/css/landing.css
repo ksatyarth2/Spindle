@@ -15,7 +15,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 nav {
@@ -55,11 +55,12 @@ nav {
 }
 
 .menu li a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .startBtn {
   padding: 8px 12px;
+  color: white;
   border-radius: 5px;
   background-color: #8859ec;
   text-decoration: none;
@@ -67,6 +68,7 @@ nav {
 
 .startBtn:hover {
   border: 2px solid white;
+  color: white;
   padding: 6px 10px;
 }
 
@@ -123,7 +125,7 @@ nav {
 
 .bottomWave {
   margin-top: -90px;
-  height: 245px;
+  height: 238px;
   background: url("../img/bottom-wave.svg") no-repeat;
   background-size: cover;
 }
