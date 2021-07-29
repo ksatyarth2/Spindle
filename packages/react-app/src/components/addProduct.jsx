@@ -3,7 +3,7 @@ import "./css/addProduct.css";
 
 export default function AddProduct() {
     return (
-      <div className="product body1 main">
+      <div className="product body1 body2 main">
          <section class="prodHeading">
             Publish your own <strong>Artwork</strong>
         </section>
