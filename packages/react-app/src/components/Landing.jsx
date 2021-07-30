@@ -321,7 +321,7 @@ export default function Landing(props) {
             </div>
             <div className="rightNav">
                 <ul className="menu">
-                    <li><Link to="/"><div className="menuBtn">Create</div></Link></li>
+                    <li><Link to="/create"><div className="menuBtn">Create</div></Link></li>
                     <li><Link to="/explore"><div className="menuBtn">Explore</div></Link></li>
                     <li>
                     <Account

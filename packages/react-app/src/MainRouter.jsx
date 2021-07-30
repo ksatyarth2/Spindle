@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter, Route, Switch } from "react-router-dom";
-import {Landing, Product, Gallery} from "./components";
+import {Landing, Product, Gallery, AddProduct} from "./components";
 
 
 const MainRouter = () => {
@@ -15,6 +15,9 @@ const MainRouter = () => {
         </Route>
         <Route path="/explore">
             <Gallery />
+        </Route>
+        <Route path="/create">
+            <AddProduct />
         </Route>
       </Switch>
       </BrowserRouter>
