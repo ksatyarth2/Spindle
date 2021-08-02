@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 export default function Product() {
   return (
-    <div className="product body">
+    <div className="product body1">
       <Link to="/" className="backBtn">
         <img src={Back} alt="back" />
       </Link>

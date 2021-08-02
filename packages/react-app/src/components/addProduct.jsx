@@ -3,11 +3,13 @@ import "./css/addProduct.css";
 
 export default function AddProduct() {
     return (
+
       <div className="product body1 body2 main">
+
          <section class="prodHeading">
             Publish your own <strong>Artwork</strong>
         </section>
-        <main>
+        <div className="main">
             <form action="#" autocomplete="off">
                 <ol class="fields" id="thisform">
                     <li class="visible">
@@ -33,7 +35,7 @@ export default function AddProduct() {
                 </ol>
             </form>
             <button class="prodSubmit" type="submit">Continue</button>
-        </main>
+        </div>
       </div>
     );
   }

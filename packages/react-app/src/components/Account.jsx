@@ -1,10 +1,9 @@
-import { Button } from "antd";
 import React from "react";
-import { useThemeSwitcher } from "react-css-theme-switcher";
 import "./css/landing.css";
 import Address from "./Address";
 import Balance from "./Balance";
 import Wallet from "./Wallet";
+import "./css/landing.css";
 
 /*
   ~ What it does? ~
@@ -56,33 +55,32 @@ export default function Account({
   if (web3Modal) {
     if (web3Modal.cachedProvider) {
       modalButtons.push(
-        <Button
-          className="menuBtn"
+        <div className="menuBtn"
+          //className="menuBtn"
           key="logoutbutton"
           size="large"
           style={{ verticalAlign: "top", marginLeft: 8, marginTop: 4 }}
           onClick={logoutOfWeb3Modal}
         >
           Log Out
-        </Button>,
+        </div>,
       );
     } else {
       modalButtons.push(
-        <Button
-          className="menuBtn"
+        <div class="menuBtn"
+          //className="menuBtn"
           key="loginbutton"
           style={{ verticalAlign: "top", marginLeft: 8, marginTop: 4 }}
-          size="large"
           /* type={minimized ? "default" : "primary"}     too many people just defaulting to MM and having a bad time */
           onClick={loadWeb3Modal}
         >
           Log In
-        </Button>,
+        </div>,
       );
     }
   }
 
-  const { currentTheme } = useThemeSwitcher();
+  //const { currentTheme } = useThemeSwitcher();
 
   const display = minimized ? (
     ""
@@ -99,7 +97,7 @@ export default function Account({
         provider={userProvider}
         ensProvider={mainnetProvider}
         price={price}
-        color={currentTheme === "light" ? "#1890ff" : "#2caad9"}
+        //color={currentTheme === "light" ? "#1890ff" : "#2caad9"}
       />
     </span>
   );
