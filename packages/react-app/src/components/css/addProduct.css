@@ -1,96 +1,96 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  color: white;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Poppins", sans-serif !important;
+  color: white !important;
 }
 
 .body2 {
-  background-size: cover;
-  background-position: center;
-  background-color: #121222;
-  display: flex;
-  margin: 40px;
-  overflow: hidden;
+  background-size: cover  !important; 
+  background-position: center !important;
+  background-color: #121222 !important;
+  display: flex !important;
+  margin: 40px !important;
+  overflow: hidden !important;
 }
 
 .prodHeading {
-  font-size: 2em;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  font-size: 2em !important;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s !important;
 }
 
 .prodHeading strong {
-  color: #e5ff46;
+  color: #e5ff46 !important;
 }
 
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 70px 100px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 70px 100px !important;
 }
 
 .fields {
-  margin-top: 160px;
-  list-style: none;
+  margin-top: 160px !important;
+  list-style: none !important;
 }
 
 .visible {
-  visibility: visible;
-  position: absolute;
-  top: 40%;
+  visibility: visible !important;
+  position: absolute !important;
+  top: 40% !important;
 }
 
-.li {
-  display: flex;
-  flex-direction: column;
-  margin-left: -100px;
-  visibility: hidden;
-  transition: all ease-out 0.5s;
+ li {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-left: -100px !important;
+  visibility: hidden !important;
+  transition: all ease-out 0.5s !important;
 }
 
-.li label {
-  font-size: 1.3em;
-  margin-bottom: 20px;
+ li label {
+  font-size: 1.3em !important;
+  margin-bottom: 20px !important;
 }
 
-.li input {
-  width: 40vw;
-  height: 8vh;
-  padding: 5px 10px;
-  font-size: 2em;
-  outline: none;
-  border: none;
-  border-radius: 20px;
-  background-color: transparent;
-  text-overflow: ellipsis;
+ li input {
+  width: 40vw !important;
+  height: 8vh !important;
+  padding: 5px 10px !important;
+  font-size: 2em !important;
+  outline: none !important;
+  border: none !important;
+  border-radius: 20px !important;
+  background-color: transparent !important;
+  text-overflow: ellipsis !important;
 }
 
-.li input:focus {
-  border: #fff 2px solid;
+ li input:focus {
+  border: #fff 2px solid !important;
 }
 
 .prodSubmit {
-  position: absolute;
-  bottom: 10%;
-  left: 75%;
-  transition: 0.5s ease;
-  font-size: 26px;
-  padding: 6px 70px;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #6737ce 0%, #1b0053 100%);
-  box-shadow: 2px 2px 4px #00000040;
+  position: absolute !important;
+  bottom: 10% !important;
+  left: 75% !important;
+  transition: 0.5s ease !important;
+  font-size: 26px !important;
+  padding: 6px 70px !important;
+  border-radius: 10px !important;
+  background: linear-gradient(180deg, #6737ce 0%, #1b0053 100%) !important;
+  box-shadow: 2px 2px 4px #00000040 !important;
 }
 
 .prodSubmit:hover {
-  transition: 0.2s ease;
-  border-radius: 30px;
+  transition: 0.2s ease !important;
+  border-radius: 30px !important;
 }
 
 textarea {
-  background-color: #ffffff60;
-  padding: 10px;
-  color: black;
+  background-color: #ffffff60 !important;
+  padding: 10px !important;
+  color: black !important;
 }
