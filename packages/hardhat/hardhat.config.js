@@ -93,11 +93,10 @@ module.exports = {
       },
     },
     matic: {
-      url: "https://rpc-mumbai.maticvigil.com/",
-      gasPrice: 1000000000,
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: [
+        "97f16e12cb2ef655b28ae998366aacb0de87e362f2aed59b0ef37ba16340c40b",
+      ],
     },
     rinkebyArbitrum: {
       url: "https://rinkeby.arbitrum.io/rpc",

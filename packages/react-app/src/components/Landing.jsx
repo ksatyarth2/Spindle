@@ -11,6 +11,7 @@ import Web3Modal from "web3modal";
 import { Account, Contract, Faucet, GasGauge, Header, Ramp } from "../components";
 import { INFURA_ID, NETWORK, NETWORKS } from "../constants";
 import { Transactor } from "../helpers";
+import Portis from "@portis/web3";
 import {
   useBalance,
   useContractLoader,
@@ -100,6 +101,12 @@ const web3Modal = new Web3Modal({
           100:"https://dai.poa.network", // xDai
         },
       },
+    },
+    portis: {
+      package: Portis, // required
+      options: {
+        id: "ce67c45a-a5ac-441f-ac37-1d251c0dd982" // required
+      }
     },
     'custom-walletlink': {
       display: {
