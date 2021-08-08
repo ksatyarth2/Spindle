@@ -43,7 +43,7 @@
   top: 40% !important;
 }
 
- li {
+ .li {
   display: flex !important;
   flex-direction: column !important;
   margin-left: -100px !important;
@@ -51,12 +51,12 @@
   transition: all ease-out 0.5s !important;
 }
 
- li label {
+ .li label {
   font-size: 1.3em !important;
   margin-bottom: 20px !important;
 }
 
- li input {
+ .li input {
   width: 40vw !important;
   height: 8vh !important;
   padding: 5px 10px !important;
@@ -68,7 +68,7 @@
   text-overflow: ellipsis !important;
 }
 
- li input:focus {
+ .li input:focus {
   border: #fff 2px solid !important;
 }
 

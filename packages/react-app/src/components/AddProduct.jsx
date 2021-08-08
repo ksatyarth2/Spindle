@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/addProduct.css";
+//import "./css/addProduct.css";
 
 export default function AddProduct() {
     var s = 1;

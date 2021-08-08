@@ -327,10 +327,9 @@ export default function Landing(props) {
                 </a>
             </div>
             <div className="rightNav">
-                <ul className="menu">
-                    <li><Link to="/create"><div className="menuBtn">Create</div></Link></li>
-                    <li><Link to="/explore"><div className="menuBtn">Explore</div></Link></li>
-                    <li>
+                <div className="menu">
+                    <Link to="/create"><div className="menuBtn">Create</div></Link>
+                    <Link to="/explore"><div className="menuBtn">Explore</div></Link>
                     <Account
                         address={address}
                         localProvider={localProvider}
@@ -342,9 +341,8 @@ export default function Landing(props) {
                         logoutOfWeb3Modal={logoutOfWeb3Modal}
                         blockExplorer={blockExplorer}
                       />
-                    </li>
                     <Link to="#"><div className="startBtn">Get Started</div></Link>
-                </ul>
+                </div>
             </div>
         </nav>
 

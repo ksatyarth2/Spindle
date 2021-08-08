@@ -40,7 +40,7 @@ nav {
 }
 
 .menu {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding-right: 30px;
 }
