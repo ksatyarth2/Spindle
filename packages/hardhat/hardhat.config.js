@@ -93,11 +93,10 @@ module.exports = {
       },
     },
     matic: {
-      url: "https://rpc-mainnet.maticvigil.com/",
-      gasPrice: 1000000000,
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: [
+        "97f16e12cb2ef655b28ae998366aacb0de87e362f2aed59b0ef37ba16340c40b",
+      ],
     },
     rinkebyArbitrum: {
       url: "https://rinkeby.arbitrum.io/rpc",
@@ -175,6 +174,15 @@ module.exports = {
       },
       {
         version: "0.6.7",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
+      {
+        version: "0.7.6",
         settings: {
           optimizer: {
             enabled: true,
