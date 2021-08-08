@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: AGPL-3.0
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
-import "@chainlink/contracts/src/v0.7/ChainlinkClient.sol";
-import "./StringUtils.sol";
+import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
+// import "./StringUtils.sol";
 
 interface IERC20 {
     function balanceOf(address account) external view returns (uint256);
@@ -11,7 +11,7 @@ interface IERC20 {
     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
 }
 
-contract APIConsumer is ChainlinkClient, StringUtils {
+contract APIConsumer is ChainlinkClient {
     address owner;
 
     using Chainlink for Chainlink.Request;
@@ -70,15 +70,7 @@ contract APIConsumer is ChainlinkClient, StringUtils {
 
         Chainlink.Request memory request = buildChainlinkRequest(jobId, address(this), this.fulfill.selector);
 
-        string memory reqApiAddress =string(abi.encodePacked(
-            "https://api.1inch.exchange/v2.0/quote?fromTokenAddress=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee&toTokenAddress=",
-            address2str(tokensAllowed[_tokenSymbol]),
-            "&amount=",
-            uint2str(_amount))
-        );
-
-        requestApiList.push(reqApiAddress);
-        request.add("get", reqApiAddress);
+       
 
         string[] memory path = new string[](1);
         path[0] = "toTokenAmount";

@@ -137,7 +137,11 @@ nav {
 
 .bottomWave {
   margin-top: -90px;
-  height: 238px;
+  height: 45vh;
   background: url("../img/bottom-wave.svg") no-repeat;
   background-size: cover;
+}
+iframe
+{
+    display: none;
 }
