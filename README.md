@@ -1,13 +1,25 @@
+# Spindle
 
-
-Spindle
-===
 
 > Spindle is an NFT marketplace that doubles up as a publishing platform which lets writers mint their NFTs and allow their readers to indulge in alternate plotlines or treasure a visual memoir.
 
-## Table of Contents
 
-[TOC]
+<p align="center">
+  <img src="packages/react-app/src/assets/spindle.png" width="850" height="450">
+</p>
+
+### Advantages of NFTs for writer:
+
+##### Special and Limited Editions
+Writer can create special or limited editions of the books.
+
+##### Signed Copies
+An author could also create copies with a limited number of digitally signed copies of a work.
+
+##### Bonuses
+Making the owner special and providing him with special and alternative storylines when he buys the book.
+
+
 
 ## Running the app
 
@@ -20,7 +32,7 @@ Follow these steps to run Spindle !!
 5. Ta da !!
 
 
-## Tech Stack
+### Tech Stack
 
 
 1. React for frontend 
@@ -31,3 +43,4 @@ Follow these steps to run Spindle !!
 6. Portis for smooth user experience for buyers who are not equipped with blockchain extensions
 7. The Graph for indexing the CIDs
 8. Dynamic Access Control by NuCypher for ensuring only the buyers have access to the complete article / book
+
